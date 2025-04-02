@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Healthcare Perks – Coming Soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400&display=swap" rel="stylesheet">
+    <style>
+        /* Color Scheme */
+        :root {
+            --primary-color: #0A2540; /* Deep Navy */
+            --secondary-color: #D4AF37; /* Gold */
+            --text-color: #ffffff;
+            --button-hover: #B8860B;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: url('https://source.unsplash.com/1600x900/?luxury,hospital') no-repeat center center/cover;
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            opacity: 0.9;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .cta {
+            margin-top: 20px;
+        }
+
+        input {
+            padding: 12px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        button {
+            background: var(--secondary-color);
+            color: var(--primary-color);
+            border: none;
+            padding: 12px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background: var(--button-hover);
+            color: #fff;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Exclusive Healthcare Perks – Tailored for You</h1>
+    <p>A new way to access premium healthcare benefits. Designed for private healthcare users who expect more.</p>
+
+    <div class="cta">
+        <form action="https://formsubmit.co/info@medperks.co.uk" method="POST">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Join the Waitlist</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>We respect your privacy. Your email will only be used for early access updates. <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
