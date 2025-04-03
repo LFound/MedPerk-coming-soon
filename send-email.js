@@ -1,4 +1,4 @@
- const nodemailer = require("const nodemailer = require("nodemailer");
+ const nodemailer = require("nodemailer");
 
 // Access the SMTP key from environment variables (GitHub Secrets)
 const smtpKey = process.env.BREVO_SMTP_KEY;
