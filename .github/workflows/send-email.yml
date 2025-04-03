@@ -24,4 +24,4 @@ jobs:
       - name: Send email using Brevo SMTP
         run: node send-email.js
         env:
-          SMTP_KEY: ${{ secrets.BREVO_SMTP_KEY }}  # Uses your stored GitHub Secrets
+          BREVO_SMTP_KEY: ${{ secrets.BREVO_SMTP_KEY }}  # Uses your stored GitHub Secrets
