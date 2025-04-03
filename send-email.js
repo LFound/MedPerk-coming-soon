@@ -1,7 +1,7 @@
 const nodemailer = require("nodemailer");
 
 // Access the SMTP key from environment variables (GitHub Secrets)
-const smtpKey = process.env.SMTP_KEY;
+const smtpKey = process.env.BREVO_SMTP_KEY;
 
 if (!smtpKey) {
   console.error("SMTP Key is missing!");
