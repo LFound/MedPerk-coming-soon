@@ -6,7 +6,7 @@ on:
       - main  # Runs when changes are pushed to the main branch
 
 jobs:
-  send-email:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,8 +22,6 @@ jobs:
         run: npm install  # Only needed if using a script with dependencies
 
       - name: Send email using Brevo SMTP
+        run: node send-email.js
         env:
-          SMTP_KEY: ${{ secrets.BREVO_SMTP_KEY }}  # Uses your stored GitHub Secret
-        run: |
-          echo "Sending email..."
-          node send-email.js  # This should be your email sending script
+          SMTP_KEY: ${{ secrets.BREVO_SMTP_KEY }}  # Uses your stored GitHub Secrets
