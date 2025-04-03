@@ -1,0 +1,29 @@
+name: Send Email Using Brevo SMTP
+
+on:
+  push:
+    branches:
+      - main  # Runs when changes are pushed to the main branch
+
+jobs:
+  send-email:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install  # Only needed if using a script with dependencies
+
+      - name: Send email using Brevo SMTP
+        env:
+          SMTP_KEY: ${{ secrets.BREVO_SMTP_KEY }}  # Uses your stored GitHub Secret
+        run: |
+          echo "Sending email..."
+          node send-email.js  # This should be your email sending script
