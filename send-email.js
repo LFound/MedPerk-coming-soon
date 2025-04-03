@@ -1,6 +1,6 @@
 const nodemailer = require("nodemailer");
 
-// Load environment variables
+// Access the SMTP key from environment variables (GitHub Secrets)
 const smtpKey = process.env.SMTP_KEY;
 
 if (!smtpKey) {
@@ -9,7 +9,7 @@ if (!smtpKey) {
 }
 
 const transporter = nodemailer.createTransport({
-  host: "smtp-relay.sendinblue.com", // Brevo SMTP host
+  host: "smtp-relay.brevo.com", // Brevo SMTP host
   port: 587,
   secure: false, // true for port 465, false for 587
   auth: {
@@ -20,7 +20,7 @@ const transporter = nodemailer.createTransport({
 
 const mailOptions = {
   from: '"Your Name" <info@medperks.co.uk>', 
-  to: "your-personal-email@example.com", 
+  to: "luke.found@icloud.com", 
   subject: "Test Email from GitHub Actions",
   text: "This is a test email sent from GitHub Actions using Brevo SMTP.",
 };
