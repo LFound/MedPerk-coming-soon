@@ -13,7 +13,7 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false, // true for port 465, false for 587
   auth: {
-    user: "info@medperks.co.uk", // Must match verified sender in Brevo
+    user: "897745002@smtp-brevo.com", // Must match verified sender in Brevo
     pass: smtpKey,
   },
 });
