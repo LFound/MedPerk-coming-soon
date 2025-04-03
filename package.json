@@ -1,0 +1,9 @@
+{
+  "name": "medperks-coming-soon",
+  "version": "1.0.0",
+  "description": "A simple project for sending email",
+  "main": "send-email.js",
+  "dependencies": {
+    "nodemailer": "^6.7.1"
+  }
+}
