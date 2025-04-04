@@ -102,10 +102,16 @@
     <p>A new way to access premium healthcare benefits. Designed for private healthcare users who expect more.</p>
 
     <div class="cta">
-        <form action="https://formsubmit.co/info@medperks.co.uk" method="POST">
-            <input type="email" name="email" placeholder="Enter your email" required>
-            <button type="submit">Join the Waitlist</button>
-        </form>
+       <form action="https://formsubmit.co/info@medperks.co.uk" method="POST">
+  <!-- Hidden fields -->
+  <input type="hidden" name="_subject" value="New MedPerks Waitlist Signup">
+  <input type="hidden" name="_next" value="https://medperks.co.uk/thank-you.html">
+  <input type="hidden" name="_captcha" value="false">
+
+  <!-- User input -->
+  <input type="email" name="email" placeholder="Enter your email" required>
+  <button type="submit">Join the Waitlist</button>
+</form>
     </div>
 
     <footer>
